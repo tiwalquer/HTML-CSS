@@ -1,0 +1,24 @@
+.minha-div{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    justify-content: center;
+}
+
+button{
+
+    background-color: aquamarine;
+    width: 60px;
+    height: 40px;
+    color: black;
+    border: 1px;
+    border-radius: 10px;
+}
+
+button:hover{
+
+    background-color: blueviolet;
+    transition: ease-in-out 1s;
+    scale: 200%;
+}
