@@ -1,5 +1,18 @@
+
+
 Oque é a tag - '<section>' = Usado quando algo tem assunto proprio, ele se divite do conteudo que vinha sendo apresentado no texto, possuei caracter semantico ( têm significado próprio e descrevem o papel do conteúdo que envolvem, ajudando navegadores, mecanismos de busca,
 agrupara elementos relacionados). Exemplo: quando o seu site vai apresentar por quem ele foi feito e vc se apresenta. Apresentacao da sua empresa. qualquer conteudo que se difere dos demais temas do site
 
 Oque é a tag - '<div>' = Possuie caracter generico (nao deixa claro qual sera o seu conteudo, agrupa elementos sem relacionamento necessario), usado para agrupar elementos e organizar a pagina, tornando a sua manipulacao com CSS e javaScript muito mais flexiveis
 
+'<strong>' 
+
+'<em>'
+
+'<b>'
+
+'<i>'
+
+'<br>'
+
+'<abbr>'
