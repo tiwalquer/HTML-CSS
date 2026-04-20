@@ -5,13 +5,15 @@ agrupara elementos relacionados). Exemplo: quando o seu site vai apresentar por 
 
 Oque é a tag - '<div>' = Possuie caracter generico (nao deixa claro qual sera o seu conteudo, agrupa elementos sem relacionamento necessario), usado para agrupar elementos e organizar a pagina, tornando a sua manipulacao com CSS e javaScript muito mais flexiveis
 
-'<strong>' 
+Tags usadas para formatacao semantica(mostrar algo em um texto), funciona dentro de alguma escrita, Exemplo <p> ( paragrafo), <p> Before proceeding, <strong>make sure you put on your here</strong> </p> 
+Exemplo de algumas tags:
+'<strong>' = é usado para definir partes bem importantes, as deixando em negrito
 
-'<em>'
+'<b>'= destaca areas ( sem mostrar tanta importancia), as deixando em negrito //pouco utilizado
 
-'<b>'
+'<em>' = serve para infatizar areas importantes, as deixando em italico
 
-'<i>'
+'<i>' = usado quando a palavra esta fora do seu estado normal, exemplo:
 
 '<br>'
 
