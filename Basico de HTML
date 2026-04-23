@@ -1,20 +1,42 @@
+HTML (HyperText Markup Language) usado para criar paginas web, definindo estruturas e sintidos do conteudo web. Nao é uma linguagem de programacao mas sim uma linguagem de marcacao( é um tipo linguagem utilizado para organizar, estruturar e descreever
+elementos de um texto, usando tags, as quais iram mostrar oque cada elemento é.
+Exemplo dessas tags sao:
+
+Atributos da tag = sao os atributos que ficam dentro da chave da tag de abertura, e servem para fornecer informacoes adicionais sobre o elementos, modificando o seu comportamento ou aparencia, muito usadas para auxiliar o uso da tag em outra 
+linguagem como CSS e javaScript, sempre seguindo esse padrao de criacao :<nome-da-tag atributo="valor">conteúdo</nome-da-tag>.  Segue exemplo de uma tag com atributos da tag : <p id="paragrafo1" class="texto-destaque">Olá!</p>
 
 
-Oque é a tag - '<section>' = Usado quando algo tem assunto proprio, ele se divite do conteudo que vinha sendo apresentado no texto, possuei caracter semantico ( têm significado próprio e descrevem o papel do conteúdo que envolvem, ajudando navegadores, mecanismos de busca,
-agrupara elementos relacionados). Exemplo: quando o seu site vai apresentar por quem ele foi feito e vc se apresenta. Apresentacao da sua empresa. qualquer conteudo que se difere dos demais temas do site
+Oque é a tag - '<section>' = Usado quando algo tem assunto proprio, ele se divite do conteudo que vinha sendo apresentado no texto, possuei caracter semantico ( têm significado próprio e descrevem o papel do conteúdo que envolvem, ajudando navegadores, 
+mecanismos de busca, agrupara elementos relacionados). Exemplo: quando o seu site vai apresentar por quem ele foi feito e vc se apresenta. Apresentacao da sua empresa. qualquer conteudo que se difere dos demais temas do site
 
-Oque é a tag - '<div>' = Possuie caracter generico (nao deixa claro qual sera o seu conteudo, agrupa elementos sem relacionamento necessario), usado para agrupar elementos e organizar a pagina, tornando a sua manipulacao com CSS e javaScript muito mais flexiveis
+Oque é a tag - '<div>' = Possuie caracter generico (nao deixa claro qual sera o seu conteudo, agrupa elementos sem relacionamento necessario), usado para agrupar elementos e organizar a pagina, tornando a sua manipulacao com CSS e javaScript muito 
+mais flexiveis
+
+
+Agora saindo das tags de valor semantico vamos entrar nas tags de coleta de dados, os input, dados que o usario ira colocar, e nos desidiremos como, qual, para aonde vai:
+
+'<form>' = é usado para criar formularios( dai vem o nome 'form') em paginas web ou seja, areas onde o usuario pode inserir dados e enviar informacoes. Ela serve apenas como um conteiner ela define o espaco onde tera esses campos de entrada e
+define como os dados serao enviados. Essa tag PODE possuir atributos da tag, como 'action' → para onde os dados serão enviados (URL), caso tenha o 'action' pode ter o , 'method' → como enviar os dados, ficando assim:
+<form action="/enviar" method="post">.
+
+detro da tag 'form' é colocado oque nos queremos e como queremos receber os nossos dados com outras tags, algumas tags comuns utilizadas:
+
+'<imput>' = é usada para criar campos onde o usuário pode digitar ou selecionar informações dentro de um formulário. Ela representa um campo de entrada de dados — pode ser texto, senha, email, botão, checkbox, entre outros. Ela tambem nao precisa
+de fechamento pois é uma tag vazia(nao aceita elementos dentro dela)
+
 
 Tags usadas para formatacao semantica(mostrar algo em um texto), funciona dentro de alguma escrita, Exemplo <p> ( paragrafo), <p> Before proceeding, <strong>make sure you put on your here</strong> </p> 
 Exemplo de algumas tags:
 '<strong>' = é usado para definir partes bem importantes, as deixando em negrito
 
-'<b>'= destaca areas ( sem mostrar tanta importancia), as deixando em negrito //pouco utilizado
+'<b>'= destaca areas ( sem mostrar tanta importancia), as deixando em negrito //bem pouco utilizado
 
-'<em>' = serve para infatizar areas importantes, as deixando em italico
+'<em>' = serve para infatizar areas importantes, as deixando em italico 
 
-'<i>' = usado quando a palavra esta fora do seu estado normal, exemplo:
+'<i>' = usado quando a palavra esta fora do seu estado normal, exemplo1: <p>O navio <i>Santa Maria</i> partiu ao amanhecer.</p> <!-- nesse caso 'Santa Maria' é um nome entao fica com o <i> ... exemplo2:O termo <i>machine learning</i> 
+<!-- nesse caso o temos um termo, a palavra nao significa apenas o bruto, mas todo um contexto por tras --> //em mais utilizado
 
-'<br>'
+'<br>' = usado para quebrar a linha
 
-'<abbr>'
+'<abbr>' = é a tag usada para criar abreviacoes/acronimos. Exemplo: <abbr title="HyperText Markup Language">HTML</abbr> <!-- o 'tittle=' sera o conteudo que significa, enquanto o que estiver no meio das chaves é a palavra abreviada
+
