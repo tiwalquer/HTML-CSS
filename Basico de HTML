@@ -21,8 +21,20 @@ define como os dados serao enviados. Essa tag PODE possuir atributos da tag, com
 
 detro da tag 'form' é colocado oque nos queremos e como queremos receber os nossos dados com outras tags, algumas tags comuns utilizadas:
 
-'<imput>' = é usada para criar campos onde o usuário pode digitar ou selecionar informações dentro de um formulário. Ela representa um campo de entrada de dados — pode ser texto, senha, email, botão, checkbox, entre outros. Ela tambem nao precisa
-de fechamento pois é uma tag vazia(nao aceita elementos dentro dela)
+'<imput>' = é usada para criar campos onde o usuário pode digitar ou selecionar informações dentro de um formulário. Ela representa um campo de entrada de dados — pode ser texto, senha, email, botão, checkbox,ratio entre outros. Ela tambem nao
+precisa de fechamento pois é uma tag vazia(nao aceita elementos dentro dela). Exemplos da sua implementacao / atributos uteis:
+diferenca de ratio e checkbox = ratio marca apenas uma opcao enquanto checkbox pode marcar varias
+<input type="text" name="nome"> , onde 'type' é o tipo de dado desejado, onde o 'name' é o nome da variavel que se associara a um valor ( a grosso modo ele armazenara um valor). Esses dois atributos sao obrigatorios em todo input, pois sem o
+'type' o sistema nao sabe que tipo de dados e nem o comportamento que o campo deve ter( sem ele o sistema assume que sera type="text") e sem o 'name' o sistema nao tem como capturar o dado passado pelo usuario
+
+'label' = Serve para dar um rótulo (nome visível) a um campo de formulário e, principalmente, ligar esse texto ao input correspondente.Para realizar o link coloque no atributo 'for' o 'id' do seu input. Exemplo: <label for="nome">Nome:</label>
+<input type="text" id="nome">
+
+' value = " " ' = define valor inicial. / E em caso de ser de marcar define o valor da variavel 
+
+'id' = usado como identificador unico na pagina, para linkar isso com label(do proprio HTML), CSS, javaScript
+
+'required' = torna o prenchimento de dados daquele campo obrigatorio por parte do usuario.
 
 
 Tags usadas para formatacao semantica(mostrar algo em um texto), funciona dentro de alguma escrita, Exemplo <p> ( paragrafo), <p> Before proceeding, <strong>make sure you put on your here</strong> </p> 
