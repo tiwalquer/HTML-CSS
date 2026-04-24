@@ -13,6 +13,9 @@ Oque é a tag - '<div>' = Possuie caracter generico (nao deixa claro qual sera o
 mais flexiveis
 
 
+'value' (importante) = sempre que existe algo que o usuario ira marcar, como um radio, checkbox, select option, o 'value' entra em cena para mostrar qual valor sera passado para o formulario caso o usuario marque aquela opcao
+'required'(importante = torna o prenchimento daquele campo obrigatorio por parte do usuario.
+
 Agora saindo das tags de valor semantico vamos entrar nas tags de coleta de dados, os input, dados que o usario ira colocar, e nos desidiremos como, qual, para aonde vai:
 
 '<form>' = é usado para criar formularios( dai vem o nome 'form') em paginas web ou seja, areas onde o usuario pode inserir dados e enviar informacoes. Ela serve apenas como um conteiner ela define o espaco onde tera esses campos de entrada e
@@ -22,19 +25,87 @@ define como os dados serao enviados. Essa tag PODE possuir atributos da tag, com
 detro da tag 'form' é colocado oque nos queremos e como queremos receber os nossos dados com outras tags, algumas tags comuns utilizadas:
 
 '<imput>' = é usada para criar campos onde o usuário pode digitar ou selecionar informações dentro de um formulário. Ela representa um campo de entrada de dados — pode ser texto, senha, email, botão, checkbox,ratio entre outros. Ela tambem nao
-precisa de fechamento pois é uma tag vazia(nao aceita elementos dentro dela). Exemplos da sua implementacao / atributos uteis:
-diferenca de ratio e checkbox = ratio marca apenas uma opcao enquanto checkbox pode marcar varias
-<input type="text" name="nome"> , onde 'type' é o tipo de dado desejado, onde o 'name' é o nome da variavel que se associara a um valor ( a grosso modo ele armazenara um valor). Esses dois atributos sao obrigatorios em todo input, pois sem o
-'type' o sistema nao sabe que tipo de dados e nem o comportamento que o campo deve ter( sem ele o sistema assume que sera type="text") e sem o 'name' o sistema nao tem como capturar o dado passado pelo usuario
+  precisa de fechamento pois é uma tag vazia(nao aceita elementos dentro dela). Exemplos da sua implementacao / atributos uteis:
 
-'label' = Serve para dar um rótulo (nome visível) a um campo de formulário e, principalmente, ligar esse texto ao input correspondente.Para realizar o link coloque no atributo 'for' o 'id' do seu input. Exemplo: <label for="nome">Nome:</label>
-<input type="text" id="nome">
+  diferenca de ratio e checkbox = ratio marca apenas uma opcao enquanto checkbox pode marcar varias
 
-' value = " " ' = define valor inicial. / E em caso de ser de marcar define o valor da variavel 
+  <input type="text" name="nome"> , onde 'type' é o tipo de dado desejado, onde o 'name' é o nome da variavel que se associara a um valor ( a grosso modo ele armazenara um valor). Esses dois atributos sao obrigatorios em todo input, pois sem o
+    'type' o sistema nao sabe que tipo de dados e nem o comportamento que o campo deve ter( sem ele o sistema assume que sera type="text") e sem o 'name' o sistema nao tem como capturar o dado passado pelo usuario
+tipos de 'type' para inputs: 
+  
+  texto e similares:
+    'text'= campo comum de texto
+    
+    'password'= esconde oque o usuario digita 
+    
+    'email'= valida formato de email 
+    
+    'search'= campo de busca (comportamento semelhante ao 'text')
+    
+    'URL'= valida link
+    
+    'tel' = telefone
+  
+  numero/valores:
+    'number'= aceita apenas numeros
+    'range'= barra deslizante
+  
+  'date'= seleciona uma data
+  
+  selecao:
+    'ratio'= apenas uma escolha possivel
+  
+    'checkbox'= multipla escolha 
+  
+  'file'= seleciona um arquivo
+  
+  'button'= cria um botao generico
+  
+  para terminar:
+    'submit'= envia o formulario
+    'reset'= limpa o formulario
 
-'id' = usado como identificador unico na pagina, para linkar isso com label(do proprio HTML), CSS, javaScript
 
-'required' = torna o prenchimento de dados daquele campo obrigatorio por parte do usuario.
+  ' value = " " ' = define valor inicial. / E em caso de ser de marcar define o valor da variavel 
+  
+  'id' = usado como identificador unico na pagina, para linkar isso com label(do proprio HTML), CSS, javaScript
+  
+  'placeholder' = serve para colocar uma dica/mensagem no caixa de insercao, em inputs do tipo 'text', 
+
+
+ante de sairmos de input tem a tag:
+  '<label>' = Serve para dar um rótulo (nome visível) a um campo de formulário e, principalmente, ligar esse texto ao input correspondente.Para realizar o link coloque no atributo 'for' o 'id' do seu input. Exemplo: <label for="nome">Nome:</label>
+  <input type="text" id="nome">.
+
+
+Agora saindo de input
+
+'<select>'= funciona para criar um campo de escolha de opcoes em uma lista( tipo um menu dropdown)
+  '<option>'= representando as opcoes dessa nossa lista(possuem 'value') 
+  
+
+'<figure>'= usado para agrupar conteudo visual, conseguindo dar valor semantico a eles, nele pode ir imagens , gráficos, ilustrações e mais...
+
+  'figcaption' = adiciona uma legenda ao conteudo visual
+
+  'img'= tag que serve para a insercao de imagens, tag vazia(sem fechamento). Exemplo da sua implementacao <img src="gato.jpg" alt="Um gato branco" width="300">
+    'src' = caminho da imagem ... 'alt'= descricao (se a imagem nao carregar aparece o texto / importante para acessibilidade, leitura de pagina) .Esses sao os necessarios o 'width' ou 'height' sao opcionais e servem para determinar o tamanho
+  
+
+'<table>'= para realizar a criacao de uma tabela, ela funciona a base de linhas e colunas
+  '<tr>'(table row)= cria uma linha 
+  '<td>'(table data)= cria uma celula(basicamente 1 coluna). Ela é inserida dentro da 'tr'
+
+  na tabela existem organizacao semantica, sendo o cabecalio, o corpo, e o rodape, eles sao representados por:
+    'thead' = cabecalho. No lugar de 'td' vc utiliza 'th'
+    'tbody' = corpo
+    'tfoot' = rodape
+
+  para adicionar estilo
+    'border' = cria uma borda, o seu numero representa a grossura dessa borda. exemplo: <table border="1">
+    'colspan'= para mesclar celulas. Exemplo= <td colspan="2">Total</td>
+    
+
 
 
 Tags usadas para formatacao semantica(mostrar algo em um texto), funciona dentro de alguma escrita, Exemplo <p> ( paragrafo), <p> Before proceeding, <strong>make sure you put on your here</strong> </p> 
