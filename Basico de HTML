@@ -19,7 +19,7 @@ Oque é a tag - '<div>' = Possuie caracter generico (nao deixa claro qual sera o
 
 '<form>' = é usado para criar formularios( dai vem o nome 'form') em paginas web ou seja, areas onde o usuario pode inserir dados e enviar informacoes. Ela serve apenas como um conteiner ela define o espaco onde tera esses campos de entrada e
   define como os dados serao enviados. Essa tag PODE possuir atributos da tag, como 'action' → para onde os dados serão enviados (URL), caso tenha o 'action' pode ter o , 'method' → como enviar os dados, ficando assim:
-  <form action="/enviar" method="post">.
+  <form action="/enviar" method="post">. Mas pode ter outros tambem como 'id'
 
   '<fieldset>'= usado para agrupar campos relacionados dentro de um formulário, ajuda na organizacao visual 
     '<legend>' = cria um título do grupo(para a caixa)
@@ -61,9 +61,11 @@ Oque é a tag - '<div>' = Possuie caracter generico (nao deixa claro qual sera o
     
     'file'= seleciona um arquivo
     
-    'button'= cria um botao generico
+    'button'= cria um botao generico, o seu uso mais comum e para enviar formularios ou realizar acoes, oque determina oque o botao vai fazer é o seu 'type' por exemplo, type="submit" = envia formulário  (importante: esse é o tipo padrao se voce
+      nao passar um 'type' esse sera o padrao!)   ,type="button" = ação com JS(nao faz nada sozinho, type="reset" = limpa formulário. Boa pratica: Se estiver dentro de um <form> e você não quer enviar, set o 'type' do botao para 'button', para
+      nao correr risco, voce pode linkar o seu botao com o 'id' do formulario tambem.
     
-    para terminar:
+     para terminar:
       'submit'= envia o formulario
       'reset'= limpa o formulario
   
