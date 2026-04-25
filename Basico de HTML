@@ -7,77 +7,81 @@ linguagem como CSS e javaScript, sempre seguindo esse padrao de criacao :<nome-d
 
 
 Oque é a tag - '<section>' = Usado quando algo tem assunto proprio, ele se divite do conteudo que vinha sendo apresentado no texto, possuei caracter semantico ( têm significado próprio e descrevem o papel do conteúdo que envolvem, ajudando navegadores, 
-mecanismos de busca, agrupara elementos relacionados). Exemplo: quando o seu site vai apresentar por quem ele foi feito e vc se apresenta. Apresentacao da sua empresa. qualquer conteudo que se difere dos demais temas do site
+  mecanismos de busca, agrupara elementos relacionados). Exemplo: quando o seu site vai apresentar por quem ele foi feito e vc se apresenta. Apresentacao da sua empresa. qualquer conteudo que se difere dos demais temas do site
 
 Oque é a tag - '<div>' = Possuie caracter generico (nao deixa claro qual sera o seu conteudo, agrupa elementos sem relacionamento necessario), usado para agrupar elementos e organizar a pagina, tornando a sua manipulacao com CSS e javaScript muito 
-mais flexiveis
+  mais flexiveis
 
 
 'value' (importante) = sempre que existe algo que o usuario ira marcar, como um radio, checkbox, select option, o 'value' entra em cena para mostrar qual valor sera passado para o formulario caso o usuario marque aquela opcao
 'required'(importante = torna o prenchimento daquele campo obrigatorio por parte do usuario.
 
-Agora saindo das tags de valor semantico vamos entrar nas tags de coleta de dados, os input, dados que o usario ira colocar, e nos desidiremos como, qual, para aonde vai:
 
 '<form>' = é usado para criar formularios( dai vem o nome 'form') em paginas web ou seja, areas onde o usuario pode inserir dados e enviar informacoes. Ela serve apenas como um conteiner ela define o espaco onde tera esses campos de entrada e
-define como os dados serao enviados. Essa tag PODE possuir atributos da tag, como 'action' → para onde os dados serão enviados (URL), caso tenha o 'action' pode ter o , 'method' → como enviar os dados, ficando assim:
-<form action="/enviar" method="post">.
+  define como os dados serao enviados. Essa tag PODE possuir atributos da tag, como 'action' → para onde os dados serão enviados (URL), caso tenha o 'action' pode ter o , 'method' → como enviar os dados, ficando assim:
+  <form action="/enviar" method="post">.
 
-detro da tag 'form' é colocado oque nos queremos e como queremos receber os nossos dados com outras tags, algumas tags comuns utilizadas:
+  '<fieldset>'= usado para agrupar campos relacionados dentro de um formulário, ajuda na organizacao visual 
+    '<legend>' = cria um título do grupo(para a caixa)
 
-'<imput>' = é usada para criar campos onde o usuário pode digitar ou selecionar informações dentro de um formulário. Ela representa um campo de entrada de dados — pode ser texto, senha, email, botão, checkbox,ratio entre outros. Ela tambem nao
-  precisa de fechamento pois é uma tag vazia(nao aceita elementos dentro dela). Exemplos da sua implementacao / atributos uteis:
+  detro da tag 'form' é colocado oque nos queremos e como queremos receber os nossos dados com outras tags, algumas tags comuns utilizadas:
 
-  diferenca de ratio e checkbox = ratio marca apenas uma opcao enquanto checkbox pode marcar varias
-
-  <input type="text" name="nome"> , onde 'type' é o tipo de dado desejado, onde o 'name' é o nome da variavel que se associara a um valor ( a grosso modo ele armazenara um valor). Esses dois atributos sao obrigatorios em todo input, pois sem o
-    'type' o sistema nao sabe que tipo de dados e nem o comportamento que o campo deve ter( sem ele o sistema assume que sera type="text") e sem o 'name' o sistema nao tem como capturar o dado passado pelo usuario
-tipos de 'type' para inputs: 
+  '<imput>' = é usada para criar campos onde o usuário pode digitar ou selecionar informações dentro de um formulário. Ela representa um campo de entrada de dados — pode ser texto, senha, email, botão, checkbox,ratio entre outros. Ela tambem nao
+    precisa de fechamento pois é uma tag vazia(nao aceita elementos dentro dela). Exemplos da sua implementacao / atributos uteis:
   
-  texto e similares:
-    'text'= campo comum de texto
+    diferenca de ratio e checkbox = ratio marca apenas uma opcao enquanto checkbox pode marcar varias
+  
+    <input type="text" name="nome"> , onde 'type' é o tipo de dado desejado, onde o 'name' é o nome da variavel que se associara a um valor ( a grosso modo ele armazenara um valor). Esses dois atributos sao obrigatorios em todo input, pois sem o
+      'type' o sistema nao sabe que tipo de dados e nem o comportamento que o campo deve ter( sem ele o sistema assume que sera type="text") e sem o 'name' o sistema nao tem como capturar o dado passado pelo usuario
+  tipos de 'type' para inputs: 
     
-    'password'= esconde oque o usuario digita 
+    texto e similares:
+      'text'= campo comum de texto
+      
+      'password'= esconde oque o usuario digita 
+      
+      'email'= valida formato de email 
+      
+      'search'= campo de busca (comportamento semelhante ao 'text')
+      
+      'URL'= valida link
+      
+      'tel' = telefone
     
-    'email'= valida formato de email 
+    numero/valores:
+      'number'= aceita apenas numeros
+      'range'= barra deslizante
     
-    'search'= campo de busca (comportamento semelhante ao 'text')
+    'date'= seleciona uma data
     
-    'URL'= valida link
+    selecao:
+      'ratio'= apenas uma escolha possivel
     
-    'tel' = telefone
+      'checkbox'= multipla escolha 
+    
+    'file'= seleciona um arquivo
+    
+    'button'= cria um botao generico
+    
+    para terminar:
+      'submit'= envia o formulario
+      'reset'= limpa o formulario
   
-  numero/valores:
-    'number'= aceita apenas numeros
-    'range'= barra deslizante
   
-  'date'= seleciona uma data
-  
-  selecao:
-    'ratio'= apenas uma escolha possivel
-  
-    'checkbox'= multipla escolha 
-  
-  'file'= seleciona um arquivo
-  
-  'button'= cria um botao generico
-  
-  para terminar:
-    'submit'= envia o formulario
-    'reset'= limpa o formulario
+    ' value = " " ' = define valor inicial. / E em caso de ser de marcar define o valor da variavel 
+    
+    'id' = usado como identificador unico na pagina, para linkar isso com label(do proprio HTML), CSS, javaScript
+    
+    'placeholder' = serve para colocar uma dica/mensagem no caixa de insercao, em inputs do tipo 'text', 
 
 
-  ' value = " " ' = define valor inicial. / E em caso de ser de marcar define o valor da variavel 
+ante de sairmos totalmente de input vamo ver tags que auxiliam o seu uso, e tags com funcoes parecidas:
+  '<label>' = Serve para dar um rótulo (nome visível) a um campo de formulário e, principalmente, ligar esse texto ao input correspondente.Para realizar o link coloque no atributo 'for' o 'id' do seu input. Exemplo: 
+    <label for="nome">Nome:</label> <input type="text" id="nome">.
   
-  'id' = usado como identificador unico na pagina, para linkar isso com label(do proprio HTML), CSS, javaScript
-  
-  'placeholder' = serve para colocar uma dica/mensagem no caixa de insercao, em inputs do tipo 'text', 
-
-
-ante de sairmos de input tem a tag:
-  '<label>' = Serve para dar um rótulo (nome visível) a um campo de formulário e, principalmente, ligar esse texto ao input correspondente.Para realizar o link coloque no atributo 'for' o 'id' do seu input. Exemplo: <label for="nome">Nome:</label>
-  <input type="text" id="nome">.
-
-
+  '<textarea>'= é usada para criar uma área de texto multilinha, onde o usuário pode digitar textos maiores (diferente do <input>, que normalmente é de uma linha só), que nem o input ele tem 'name', 'id'. Atributos comuns com o seu uso:
+    Você pode controlar o tamanho com os atributos rows (linhas) e cols (colunas), tambem o maximo de carcteris com o atributo 'maxlength'
+    
 Agora saindo de input
 
 '<select>'= funciona para criar um campo de escolha de opcoes em uma lista( tipo um menu dropdown)
@@ -104,22 +108,35 @@ Agora saindo de input
   para adicionar estilo
     'border' = cria uma borda, o seu numero representa a grossura dessa borda. exemplo: <table border="1">
     'colspan'= para mesclar celulas. Exemplo= <td colspan="2">Total</td>
-    
 
+'<ul>/<ol>' = criacao de listas, o 'ul' = cria uma lista desordenada(ordem nao importa), o 'ol' = cria uma lista ordenada(ordem importa)
+  para inserir elementos na lista nos usamos a tag:
+
+  '<li>'(list item) = com isso nos podemos colocar elemento dentro da nossa lista 
+
+
+'<details>' = Usado para criar um conteúdo expansível/retrátil (esconte o seu conteudo ate o usuario clicar nele)
+  '<summary>' = cria um título clicável para o '<details>', melhorando a compreensao 
+
+
+'<a>'= serve para criar links,com o link ela pode levar o usuário para: outra página, outro site, uma parte da mesma página, um arquivo, email, etc. Exemplo: 
+  <a href="https://www.google.com">Ir para o Google</a> , o 'href' é o destino do link
+    
+    para abrir o link em outra pagina coloque o atributo 'target="_blank"'
 
 
 Tags usadas para formatacao semantica(mostrar algo em um texto), funciona dentro de alguma escrita, Exemplo <p> ( paragrafo), <p> Before proceeding, <strong>make sure you put on your here</strong> </p> 
-Exemplo de algumas tags:
-'<strong>' = é usado para definir partes bem importantes, as deixando em negrito
-
-'<b>'= destaca areas ( sem mostrar tanta importancia), as deixando em negrito //bem pouco utilizado
-
-'<em>' = serve para infatizar areas importantes, as deixando em italico 
-
-'<i>' = usado quando a palavra esta fora do seu estado normal, exemplo1: <p>O navio <i>Santa Maria</i> partiu ao amanhecer.</p> <!-- nesse caso 'Santa Maria' é um nome entao fica com o <i> ... exemplo2:O termo <i>machine learning</i> 
-<!-- nesse caso o temos um termo, a palavra nao significa apenas o bruto, mas todo um contexto por tras --> //em mais utilizado
-
-'<br>' = usado para quebrar a linha
-
-'<abbr>' = é a tag usada para criar abreviacoes/acronimos. Exemplo: <abbr title="HyperText Markup Language">HTML</abbr> <!-- o 'tittle=' sera o conteudo que significa, enquanto o que estiver no meio das chaves é a palavra abreviada
-
+  Exemplo de algumas tags:
+  '<strong>' = é usado para definir partes bem importantes, as deixando em negrito
+  
+  '<b>'= destaca areas ( sem mostrar tanta importancia), as deixando em negrito //bem pouco utilizado
+  
+  '<em>' = serve para infatizar areas importantes, as deixando em italico 
+  
+  '<i>' = usado quando a palavra esta fora do seu estado normal, exemplo1: <p>O navio <i>Santa Maria</i> partiu ao amanhecer.</p> <!-- nesse caso 'Santa Maria' é um nome entao fica com o <i> ... exemplo2:O termo <i>machine learning</i> 
+  <!-- nesse caso o temos um termo, a palavra nao significa apenas o bruto, mas todo um contexto por tras --> //em mais utilizado
+  
+  '<br>' = usado para quebrar a linha
+  
+  '<abbr>' = é a tag usada para criar abreviacoes/acronimos. Exemplo: <abbr title="HyperText Markup Language">HTML</abbr> <!-- o 'tittle=' sera o conteudo que significa, enquanto o que estiver no meio das chaves é a palavra abreviada
+  
