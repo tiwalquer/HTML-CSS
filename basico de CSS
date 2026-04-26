@@ -12,4 +12,14 @@ Modos para aplicar a estilizacao:
   Estilizacao externa(mais utilizada/melhor) = Voce cria um arquivo CSS proprio e o linka com o seu arquivo HTML, pela tag: <link rel="stylesheet" href=" ">  ... '<link>' = linka um arquivo externo ao documento html, 'rel'(relationship)= = Define o 
     tipo de relação entre o HTML e o arquivo. Nesse caso o "stylesheet" esta mostrando que o arquivo linkado é do tipo de estilizacao de folha, e o 'href' = é o caminho ate o arquivo
 
-Box Model
+Entender como os elementos da pagina sao divididos e de qual modo
+  Box Model = é um conceito que descreve como o navegador calcula o tamanho e o espaço ocupado por cada elemento em uma página web. Todo elemento é como se foce um retangulo feito por quatro leis que sao:
+    content(conteudo) = Área onde o texto, imagens ou outros elementos são exibidos.
+    Padding (Preenchimento interno)= Espaço entre o conteúdo e a borda. Transparente, mas aumenta o tamanho total da caixa.
+    Border = Linha que envolve o padding e o conteúdo. PODE ter espessura, cor e estilo.
+    Margin = Espaço externo entre a borda do elemento e outros elementos, separando dos outros elementos, transparente.
+
+  Box-sizing = é uma propriedade do CSS que define como a largura (width) e altura (height) de um elemento são calculadas. Existem 2 tipos principais:
+    content-box( nao utilizado = É o comportamento padrão do CSS. o width e height valem só para o conteúdo. Padding e border são somados por fora.
+
+    border-box( utilizado) = Aqui, o width e height já incluem padding e border.
