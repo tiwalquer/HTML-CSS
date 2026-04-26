@@ -1,6 +1,15 @@
+CSS( Cascading Style Sheets) = É uma linguagem como aparecera e o layout de uma pagina HTML ou XML
 
+Modos para aplicar a estilizacao:
 
-Estilizacao inline = É a forma mais direta de aplicar estilo a um elemento, dentro do elemento que voce quer alterar do seu codigo HTML, voce passa para a tag o atributo: 'style' ja sendo do proprio CSS, e com isso voce consegui definir as 
-  propriedades do CSS la mesmo. Exemplo de sua utilizacao  <p style="color: blue; font-size: 16px;"> Este texto está estilizado inline. </p>   ... tudo dentro do aspas do atributo 'style' é CSS, o 'color' define a cor, o ';' troca de declaracao
-  do estilo, o 'font-size' é o tamnho da fonte.
+  Estilizacao inline = É a forma mais direta de aplicar estilo a um elemento, dentro do elemento(tag) que voce quer alterar do seu codigo HTML, voce passa para a tag o atributo: 'style' ja sendo do proprio CSS, e com isso voce consegui definir as 
+    propriedades do CSS la mesmo. Exemplo de sua utilizacao  <p style="color: blue; font-size: 16px;"> Este texto está estilizado inline. </p>   ... tudo dentro do aspas do atributo 'style' é CSS, o 'color' define a cor, o ';' troca de declaracao
+    do estilo, o 'font-size' é o tamnho da fonte.
+  
+  Estilizacao interna = Voce abre uma tag '<style>' dentro do seu <head>, pois assim ele carregara os estilos antes do conteudo da pagina. Exemplo: <style> p { color: red; }  </style> ... quer dizer que esta mudando a escrita das tags <p> para a 
+    cor vermelha
 
+  Estilizacao externa(mais utilizada/melhor) = Voce cria um arquivo CSS proprio e o linka com o seu arquivo HTML, pela tag: <link rel="stylesheet" href=" ">  ... '<link>' = linka um arquivo externo ao documento html, 'rel'(relationship)= = Define o 
+    tipo de relação entre o HTML e o arquivo. Nesse caso o "stylesheet" esta mostrando que o arquivo linkado é do tipo de estilizacao de folha, e o 'href' = é o caminho ate o arquivo
+
+Box Model
