@@ -1,14 +1,19 @@
-HTML (HyperText Markup Language) usado para criar paginas web, definindo estruturas e sintidos do conteudo web. Nao é uma linguagem de programacao mas sim uma linguagem de marcacao( é um tipo linguagem utilizado para organizar, estruturar e descreever
-elementos de um texto, usando tags, as quais iram mostrar oque cada elemento é, e para tornar o entendimento da sua pagina melhor nos usamos tags de estruturacao que sao as 
+HTML (HyperText Markup Language) usado para criar paginas web de forma bruta, definindo estruturas e sintidos do conteudo web. Nao é uma linguagem de programacao mas sim uma linguagem de marcacao( é um tipo linguagem utilizado para organizar, 
+  estruturar e descreever  elementos de um texto, usando tags, as quais iram mostrar oque cada elemento é, e para tornar o entendimento da sua pagina melhor nos usamos tags de estruturacao que sao as:
 '<head>'=serve como um “container” de informações sobre a página, mas que !!não aparecem diretamente no conteúdo visível para o usuário!!, é essencial para configurar como o navegador e outros sistemas (como buscadores) vão interpretar sua 
   página.
 '<body>'=É a parte visível da página — tudo que o usuário vê fica aqui.
 '<footer>'=É usado para informações finais(pode ate ficar dentro do '<body>', nao é tao importante).
 
-Exemplo dessas tags sao:
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+(IMPORTANTE) Caso quera tornar a sua pagina mais bonita e funcional utilize de javaScript e CSS e para conectar os arquivos nos utizamos da tag:
+  '<link>' = <link rel="" href="">  ...  'link': serve para ligar um arquivo externo ao nosso documento html. 'rel': serve para mostrar que tipo de relacao aquele arquivo tem com a gente. 'href': mostrar o caminho ate aquele arquivo
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Atributos da tag = sao os atributos que ficam dentro da chave da tag de abertura, e servem para fornecer informacoes adicionais sobre o elementos, modificando o seu comportamento ou aparencia, muito usadas para auxiliar o uso da tag em outra 
-linguagem como CSS e javaScript, sempre seguindo esse padrao de criacao :<nome-da-tag atributo="valor">conteúdo</nome-da-tag>.  Segue exemplo de uma tag com atributos da tag : <p id="paragrafo1" class="texto-destaque">Olá!</p>
+Exemplo de tags sao:
+
+Atributos da tag = sao os atributos que ficam dentro da chave da tag de abertura, e servem para fornecer informacoes adicionais sobre o elementos, modificando o seu comportamento ou aparencia, podem ser usadas para auxiliar o uso da tag em 
+  outra linguagem como CSS e javaScript, sempre seguindo esse padrao de criacao :<nome-da-tag atributo="valor">conteúdo</nome-da-tag>.  Segue exemplo de uma tag com atributos da tag : <p id="paragrafo1" class="texto-destaque">Olá!</p>
 
 
 Oque é a tag - '<section>' = Usado quando algo tem assunto proprio, ele se divite do conteudo que vinha sendo apresentado no texto, possuei caracter semantico ( têm significado próprio e descrevem o papel do conteúdo que envolvem, ajudando navegadores, 
