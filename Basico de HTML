@@ -144,11 +144,12 @@ Tags usadas para formatacao semantica(mostrar algo em um texto), funciona dentro
   '<b>'= destaca areas ( sem mostrar tanta importancia), as deixando em negrito //bem pouco utilizado
   
   '<em>' = serve para infatizar areas importantes, as deixando em italico 
-  
+
   '<i>' = usado quando a palavra esta fora do seu estado normal, exemplo1: <p>O navio <i>Santa Maria</i> partiu ao amanhecer.</p> <!-- nesse caso 'Santa Maria' é um nome entao fica com o <i> ... exemplo2:O termo <i>machine learning</i> 
   <!-- nesse caso o temos um termo, a palavra nao significa apenas o bruto, mas todo um contexto por tras --> //em mais utilizado
   
   '<br>' = usado para quebrar a linha
-  
+  '<hr>' = quebra a linha, e cria uma linha preta horizontao que divide a tela
+
   '<abbr>' = é a tag usada para criar abreviacoes/acronimos. Exemplo: <abbr title="HyperText Markup Language">HTML</abbr> <!-- o 'tittle=' sera o conteudo que significa, enquanto o que estiver no meio das chaves é a palavra abreviada
   
