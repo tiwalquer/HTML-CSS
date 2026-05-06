@@ -6,13 +6,16 @@ HTML (HyperText Markup Language) usado para criar paginas web de forma bruta, de
 
 Estruturas semanticas / auxiliares de acessibilidade = 
   '<header>' = 
-  '<nav>' =
-  '<main>' =
-  '<article>' =
+  '<nav>' = Usado para agrupar ' links de navegacao ', como menus, tabelas de conteudo ou listas, o seu uso serve para auxiliar na acessibilidade, e auxiliar os usuario na navegacao da pagina. atributos auxiliares
+    'aria-label' = melhora a acessibilidade descrevendo o proposito da navegacao .
+    'aria-current ="" ' indica a pagina ativa.
+  '<main>' = É usado para tratar do conteudo principal da pagina, compoem a maior parte do 'body'
+  '<article>' = Fica dentro de 'sections', usado para criar novas divisoes onde agrupara conteudos semelhantes. (fica no 'main')  
   '<section>' =  Usado quando algo tem assunto proprio, ele se divite do conteudo que vinha sendo apresentado no texto, possuei caracter semantico ( têm significado próprio e descrevem o papel do conteúdo que envolvem, ajudando navegadores, 
-    mecanismos de busca, agrupara elementos relacionados). Exemplo: quando o seu site vai apresentar por quem ele foi feito e vc se apresenta. Apresentacao da sua empresa. qualquer conteudo que se difere dos demais temas do site
+    mecanismos de busca, agrupara elementos relacionados). Exemplo: quando o seu site vai apresentar por quem ele foi feito e vc se apresenta. Apresentacao da sua empresa. qualquer conteudo que se difere dos 
+    demais temas do site. (fica no 'main')
 
-  '<aside>' =
+  '<aside>' = É usado para definir um conteudo que nao esta ligado ao conteudo principal da pagina. É usado geralmente para barra lateral, call-out boxes, ou qualquer conteudo que complemente o principla.
   '<footer>' = É usado para informações finais,,, como informacoes de contato, autor e etc... 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 (IMPORTANTE) Caso quera tornar a sua pagina mais bonita e funcional utilize de javaScript e CSS e para conectar os arquivos nos utizamos da tag:
