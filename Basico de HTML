@@ -163,4 +163,5 @@ Tags usadas para formatacao semantica(mostrar algo em um texto), funciona dentro
   '<hr>' = quebra a linha, e cria uma linha preta horizontao que divide a tela
 
   '<abbr>' = é a tag usada para criar abreviacoes/acronimos. Exemplo: <abbr title="HyperText Markup Language">HTML</abbr> <!-- o 'tittle=' sera o conteudo que significa, enquanto o que estiver no meio das chaves é a palavra abreviada
-  
+
+  '<span>' = separa algo bem especifico, uma palavra dentro de um <p> por exemplo
