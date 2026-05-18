@@ -1,15 +1,91 @@
 
+.menu{
+    margin: 0px;
+    border-bottom: 10px solid bisque;
+
+    
+}
+
+.menu summary{
+
+    display:flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    
+}
+
 body{
 
     background-color: black;
     color: aliceblue;
     margin: 0px;
+    padding: 0px;
+    text-align: justify;
 }
 
-.menu{
-    /* border: 10px; */
-    /* border-color: ;
-    border-style: ; */
-    border-bottom: 10px solid bisque;
+header ul{
+    
+    
 
+        
+     flex: auto;
+     list-style-type:none ;
+    
+
+
+}
+
+header h1{
+    font-size: 30px;
+    text-align: center;
+}
+
+
+
+
+
+h1{
+    color: #8C560F;
+}
+
+h2{
+    color: #458C03;
+}
+
+h3{
+    color: #008C89;
+}
+
+p{
+    font-family: "Nunito", sans-serif;
+    /* font-family: "Sue Ellen Francisco", cursive; */
+    font-size: 18px;
+}
+
+.informacoesJogo h2{ /* parte do codigo que representa o final do conteudo web relacionado ao jogo */
+
+    color: #EDF261;
+
+    /* h2{ isso esta errado aparentemente o navegador pode acabar ignorando parte do codigo se escrito dessa forma a forma certa seguie embaixo
+        color: #EDF261;
+    }
+    a:hover{
+        background-color: #F2AA61;
+         font-size: 18px;
+    } */
+}
+
+
+
+a:hover{
+        background-color: #F2AA61;
+         font-size: 18px;
+} 
+
+#listaDeComidas ul{
+    
+
+        list-style-type:square;
+    
 }
