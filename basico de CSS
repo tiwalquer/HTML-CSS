@@ -23,3 +23,11 @@ Entender como os elementos da pagina sao divididos e de qual modo
     content-box( nao utilizado = É o comportamento padrão do CSS. o width e height valem só para o conteúdo. Padding e border são somados por fora.
 
     border-box( utilizado) = Aqui, o width e height já incluem padding e border.
+
+
+'position' = como mudar a posicao do seu elemento 
+  ' :static ' = valor padrao 
+
+  ' :z-indez ' = define qual elemento ficara na frente de quem.  So funciona em elementos posicionados (qualquer tipo de posicion diferente de static)
+
+flexbox = 
