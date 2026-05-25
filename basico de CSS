@@ -1,7 +1,7 @@
 CSS( Cascading Style Sheets) = É uma linguagem como aparecera e o layout de uma pagina HTML ou XML
+  'tags' podem se chamar 'Seletores por tag' em CSS
 
-Modos para aplicar a estilizacao:
-
+Modos para aplicar a estilizacao: 
   Estilizacao inline = É a forma mais direta de aplicar estilo a um elemento, dentro do elemento(tag) que voce quer alterar do seu codigo HTML, voce passa para a tag o atributo: 'style' ja sendo do proprio CSS, e com isso voce consegui definir as 
     propriedades do CSS la mesmo. Exemplo de sua utilizacao  <p style="color: blue; font-size: 16px;"> Este texto está estilizado inline. </p>   ... tudo dentro do aspas do atributo 'style' é CSS, o 'color' define a cor, o ';' troca de declaracao
     do estilo, o 'font-size' é o tamnho da fonte.
@@ -11,6 +11,16 @@ Modos para aplicar a estilizacao:
 
   Estilizacao externa(mais utilizada/melhor) = Voce cria um arquivo CSS proprio e o linka com o seu arquivo HTML, pela tag: <link rel="stylesheet" href=" ">  ... '<link>' = linka um arquivo externo ao documento html, 'rel'(relationship)= = Define o 
     tipo de relação entre o HTML e o arquivo. Nesse caso o "stylesheet" esta mostrando que o arquivo linkado é do tipo de estilizacao de folha, e o 'href' = é o caminho ate o arquivo
+
+Como estilizar = Seletores basicos =  Ele funciona com 'seletores' que seriam as 'tags' do HTML, de classes( . ) , de ID ( # ) , seletor universal ( * ). 
+  Seletores de Atributo = Permitem selecionar elementos com base em atributos ou valores específicos = 'tags = ' : tem como ter varias propriedades 
+  Combinadores = eles tem 4 tipos sendo eles. Mostrarei os 4 tipos seguido por exemplo dos mesmos= descendente( tag tag ) Seleciona elementos dentro de outro elemento ... filho direto( tag > tag )
+    seleciona elementos filhos imediatos ... Irmão adjacente (tag + tag )Seleciona o elemento imediatamente após outro ... Irmãos gerais( tag ~ tag) Seleciona todos os irmãos após um elemento. 
+  Pseudoclasses = aplicam estilos a elementos em estados específicos. Usando um : apos o seletor (tag : "a pseudo-classe"). 
+  Pseudoelementos =
+
+Boas praticas = zerar 'padding' e 'margin' de todo o seu site ... selecionar o 'box-sizing' padrao, para 'box-sizing: border-box;' caso queira mexer em elementos especificos, os quais so sera necessario mexer no tamanho do content, 
+  mexe em elementos especificos ... 
 
 Entender como os elementos da pagina sao divididos e de qual modo
   Box Model = é um conceito que descreve como o navegador calcula o tamanho e o espaço ocupado por cada elemento em uma página web. Todo elemento é como se foce um retangulo feito por quatro leis que sao:
@@ -24,6 +34,20 @@ Entender como os elementos da pagina sao divididos e de qual modo
 
     border-box( utilizado) = Aqui, o width e height já incluem padding e border.
 
+
+Como selecionar cores = Exemplo usando atributos como 'color:', 'background-color:', dentre outros. 1:Cores Nomeadas ': "nome de alguma cor" ' 2:Hexadecimal =Formato #RRGGBB ou #RGB (valores de 0 a F). 3:RGB e RGBA =  rgb(r, g, b) > valores de 0 a 255. rgba(r, g, b, a) > inclui alpha (transparência de 0 a 1).
+  4: HSL e HSLA = hsl(hue, saturation, lightness). hsla(...) com transparência.
+
+Como mudar a fonte = 'font-family:' , peguei no google fonts
+
+Unidades de tamnho no CSS = Estruturacao: nome do atributo no css, informacoes ... 1:px; (pixels); detalhes pequenos, tamanhos fixos .. 2: rem; Relativo ao tamanho da fonte do elemento raiz; .. 3: em ; Relativo ao elemento pai .. 
+  4: %; Relativo ao tamanho do elemento pai(sendo 100% o tamanho do pai) .. 5: vw (viewport width); Relativo à largura da tela; otimo para multiplos dispositivos .. 6: vh (viewport height); Relativo à altura da tela ..
+  7: vmin e vmax = vmin: menor dimensão da tela; vmax: maior dimensão da tela
+
+
+
+
+header = 
 
 'position' = como mudar a posicao do seu elemento 
   ' :static ' = valor padrao 
