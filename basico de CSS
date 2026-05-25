@@ -35,19 +35,28 @@ Entender como os elementos da pagina sao divididos e de qual modo
     border-box( utilizado) = Aqui, o width e height já incluem padding e border.
 
 
-Como selecionar cores = Exemplo usando atributos como 'color:', 'background-color:', dentre outros. 1:Cores Nomeadas ': "nome de alguma cor" ' 2:Hexadecimal =Formato #RRGGBB ou #RGB (valores de 0 a F). 3:RGB e RGBA =  rgb(r, g, b) > valores de 0 a 255. rgba(r, g, b, a) > inclui alpha (transparência de 0 a 1).
-  4: HSL e HSLA = hsl(hue, saturation, lightness). hsla(...) com transparência.
+Como selecionar cores = Exemplo usando atributos como 'color:', 'background-color:', dentre outros. 1:Cores Nomeadas ': "nome de alguma cor" ' 2:Hexadecimal =Formato #RRGGBB ou #RGB (valores de 0 a F). 
+  3:RGB e RGBA =  rgb(r, g, b) > valores de 0 a 255. rgba(r, g, b, a) > inclui alpha (transparência de 0 a 1).  4: HSL e HSLA = hsl(hue, saturation, lightness). hsla(...) com transparência.
 
 Como mudar a fonte = 'font-family:' , peguei no google fonts
 
-Unidades de tamnho no CSS = Estruturacao: nome do atributo no css, informacoes ... 1:px; (pixels); detalhes pequenos, tamanhos fixos .. 2: rem; Relativo ao tamanho da fonte do elemento raiz; .. 3: em ; Relativo ao elemento pai .. 
-  4: %; Relativo ao tamanho do elemento pai(sendo 100% o tamanho do pai) .. 5: vw (viewport width); Relativo à largura da tela; otimo para multiplos dispositivos .. 6: vh (viewport height); Relativo à altura da tela ..
+Unidades de tamnho no CSS = Estruturacao: nome do atributo no css, informacoes ... 1:px; (pixels); detalhes pequenos, tamanhos !fixos! .. 2: rem; !Relativo! ao tamanho da fonte do elemento raiz; .. 3: em ; !Relativo! ao elemento pai .. 
+  4: %; !Relativo! ao tamanho do elemento pai(sendo 100% o tamanho do pai) .. 5: vw (viewport width); !Relativo! à largura da tela; otimo para multiplos dispositivos .. 6: vh (viewport height); !Relativo! à altura da tela ..
   7: vmin e vmax = vmin: menor dimensão da tela; vmax: maior dimensão da tela
 
+posicionamento:
+  Alinhamento (horizontal / de conteudo) = '-align' para alinhamento horizontal do texto( nao mexe na posicao do elemento(div,article,  ...) apenas o conteudo). Exemplo de posiveis usos: 'text-align'.
+    propriedades do '-align' = left: Alinha o texto para a esquerda .. right: Alinha o texto para a direita .. center: Alinha o texto para o centro .. justify: Alinha o texto justificado, espaçando os lados do texto para o meio.
 
-
-
-header = 
+  Flexbox (“Flexible Box Layout”) = usado para facilitar o alinhamento e a distribuição de elementos dentro de um container. Antes de mais nada para utilizar as propriedades do elemento é necessario colocar 'display: flex;' no elemento pai(
+    o elemento pai é defenido onde voce colocou o 'display:flex') Assim os elementos filhos ficam lado a lado .. funcionalidades: unidimensional(ele lida com o layout em uma dimensão de cada vez - seja uma linha ou uma coluna); linha OU coluna.
+      direcao dos elementos = 'flex-direction' .Exemplos: Linha (padrão) = ':row' .. Coluna = ':column' 
+      !!
+      alinhamento principal(horizontal) = 'justify-content' = Controla os itens no eixo principal. Exemplos: Centralizar = 'justify-content: center;' .. Espaço entre itens = 'justify-content: space-between;', dentre outros..
+      alinhamento cruzado(vertical) = 'align-items' = Alinha no eixo cruzado.
+      !!
+      Espaçamento entre itens = 'gap: ' alguma unidade de medida
+      Quebra de linha = 'flex-wrap' = Permite quebrar linha.
 
 'position' = como mudar a posicao do seu elemento 
   ' :static ' = valor padrao 
