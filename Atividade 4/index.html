@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>semana feliz</title>
+
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: black;
+            color: aquamarine;
+        }
+
+        th, td{
+            border: 2px solid white;
+            padding: 5px;
+            
+        }
+
+        th{
+            background-color: rgb(51, 51, 51);
+            text-align: center;
+        }
+
+        td{
+            max-width: 150px ;
+            min-width: 150px;
+        }
+
+        td:nth-child(even){
+
+            background-color: blueviolet;
+        }
+
+        table{
+            border-collapse: collapse;
+
+            width: 70%;
+
+
+        }
+
+        #cafe_da_manha{
+            min-width: 40px;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        #comer{
+            min-width: 40px;
+            font-size: 40px;
+            text-align: center;
+        }   
+
+        #coisa1{
+            text-align: center;
+
+
+        }
+
+        #escola1{
+            
+            min-width: 50px;
+            max-width: 100px;
+            text-align: center;
+            font-size: 50px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <table>
+
+        <caption>semana feliz &#128525 </caption>
+        
+        <tr>
+            <th></th>
+            <th>DOM</th>
+            <th>SEG</th>
+            <th>TER</th>
+            <th>QUA</th>
+            <th>QUI</th>
+            <th>SEX</th>
+            <th>SAB</th>
+
+        </tr>
+
+        <tr>
+            <th>0h-8h</th>
+            <td>dormir</td>
+            <td>dormir</td>
+            <td>dormir</td>
+            <td>dormir</td>
+            <td>dormir</td>
+            <td>dormir</td>
+            <td>dormir</td>
+
+        </tr>
+
+        <tr>
+            <th>8h-9h</th> 
+            <td colspan="7" id="cafe_da_manha">tomo cafe</td>
+            
+        </tr>
+
+        <tr>
+            <th>9h-10h</th>
+            <td>jogo futebol</td>
+            <td rowspan="2">jogar</td>
+            <td>relaxar</td>
+            <td>relaxar</td>
+            <td rowspan="2">jogar</td>
+            <td>relaxar</td>
+            <td>relaxar</td>
+        </tr>
+
+        
+
+        <tr>
+            <th>10h-12h</th>
+            <td>descansar</td>
+            <td colspan="2">estudar</td>
+            <td colspan="2" id="coisa1">estudar</td>
+        </tr>
+
+        <tr>
+            <th>12h-13h</th>
+            <td>comer</td>
+            <td colspan="6" id="comer"> comer</td>
+        </tr>
+
+        <tr>
+            <th>13h-15h</th>
+            <td>estudar</td>
+            <td>academia</td>
+            <td>relaxar</td>
+            <td>academia</td>
+            <td>estudar</td>
+            <td>academia</td>
+            <td>andar cachorro</td>
+        </tr>
+
+        <tr>
+            <th>15h-19h</th>
+            <td>jogar / andar com cachorro</td>
+            <td>relaxar</td>
+            <td>andar cachorra</td>
+            <td>relaxar</td>
+            <td>andar cachorra</td>
+            <td>relaxar</td>
+            <td>andar cachorra</td>
+        </tr>
+
+        <tr>
+            <th>19h-22h</th>
+            <td>comer/ estudar</td>
+            <td colspan="5" id="escola1">escola</td>
+            <td>relaxar </td>
+        </tr>
+
+        <tr>
+            <th>22h-00h</th>
+            <td>descansar</td>
+            <td>descansar</td>
+            <td>descansar</td>
+            <td>descansar</td>
+            <td>descansar</td>
+            <td>descansar</td>
+            <td>descansar</td>
+        </tr>
+
+    </table>
+
+
+
+</body>
+
+</html>
