@@ -47,7 +47,7 @@ Unidades de tamnho no CSS = Estruturacao: nome do atributo no css, informacoes .
 posicionamento:
   Alinhamento (horizontal / de conteudo) = '-align' para alinhamento horizontal do texto( nao mexe na posicao do elemento(div,article,  ...) apenas o conteudo). Exemplo de posiveis usos: 'text-align'.
     propriedades do '-align' = left: Alinha o texto para a esquerda .. right: Alinha o texto para a direita .. center: Alinha o texto para o centro .. justify: Alinha o texto justificado, espaçando os lados do texto para o meio.
-
+    
   Flexbox (“Flexible Box Layout”) = usado para facilitar o alinhamento e a distribuição de elementos dentro de um container. Antes de mais nada para utilizar as propriedades do elemento é necessario colocar 'display: flex;' no elemento pai(
     o elemento pai é defenido onde voce colocou o 'display:flex') Assim os elementos filhos ficam lado a lado .. funcionalidades: unidimensional(ele lida com o layout em uma dimensão de cada vez - seja uma linha ou uma coluna); linha OU coluna.
       direcao dos elementos = 'flex-direction' .Exemplos: Linha (padrão) = ':row' .. Coluna = ':column' 
@@ -57,6 +57,8 @@ posicionamento:
       !!
       Espaçamento entre itens = 'gap: ' alguma unidade de medida
       Quebra de linha = 'flex-wrap' = Permite quebrar linha.
+
+      o display:none = esconde um elemento
 
 'position' = como mudar a posicao do seu elemento 
   ' :static ' = valor padrao 
