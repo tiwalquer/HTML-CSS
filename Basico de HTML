@@ -1,8 +1,9 @@
-HTML (HyperText Markup Language) usado para criar paginas web de forma bruta, definindo estruturas e sintidos do conteudo web. Nao é uma linguagem de programacao mas sim uma linguagem de marcacao( é um tipo linguagem utilizado para organizar, 
-  estruturar e descreever  elementos de um texto, usando tags, as quais iram mostrar oque cada elemento é, e para tornar o entendimento da sua pagina melhor nos usamos tags de estruturacao que sao as:
-'<head>'=serve como um “container” de informações sobre a página, mas que !!não aparecem diretamente no conteúdo visível para o usuário!!, é essencial para configurar como o navegador e outros sistemas (como buscadores) vão interpretar sua 
-  página.
-'<body>'=É a parte visível da página — tudo que o usuário vê fica aqui.
+HTML (HyperText Markup Language) usado para criar paginas web de forma bruta, definindo estruturas e sintidos do conteudo web. Nao é uma linguagem de programacao mas sim uma linguagem de marcacao
+  ( é um tipo linguagem utilizado para organizar, estruturar e descreever  elementos de um texto, usando tags, as quais iram mostrar oque cada elemento é, e para tornar o entendimento da sua pagina melhor nos 
+  usamos tags de estruturacao que sao as:
+    '<head>'=serve como um “container” de informações sobre a página, mas que !!não aparecem diretamente no conteúdo visível para o usuário!!, é essencial para configurar como o navegador e outros sistemas (como buscadores) vão interpretar sua 
+      página.
+    '<body>'=É a parte visível da página — tudo que o usuário vê fica aqui.
 
 Estruturas semanticas / auxiliares de acessibilidade = 
   '<header>' = 
@@ -11,33 +12,37 @@ Estruturas semanticas / auxiliares de acessibilidade =
     'aria-current ="" ' indica a pagina ativa.
   '<main>' = É usado para tratar do conteudo principal da pagina, compoem a maior parte do 'body'
   '<article>' = Fica dentro de 'sections', usado para criar novas divisoes onde agrupara conteudos semelhantes. (fica no 'main')  
-  '<section>' =  Usado quando algo tem assunto proprio, ele se divite do conteudo que vinha sendo apresentado no texto, possuei caracter semantico ( têm significado próprio e descrevem o papel do conteúdo que envolvem, ajudando navegadores, 
-    mecanismos de busca, agrupara elementos relacionados). Exemplo: quando o seu site vai apresentar por quem ele foi feito e vc se apresenta. Apresentacao da sua empresa. qualquer conteudo que se difere dos 
-    demais temas do site. (fica no 'main')
+  '<section>' =  Usado quando algo tem assunto proprio, ele se divite do conteudo que vinha sendo apresentado no texto, possuei caracter semantico ( têm significado próprio e descrevem o papel do conteúdo que 
+    envolvem, ajudando navegadores, mecanismos de busca, agrupara elementos relacionados). Exemplo: quando o seu site vai apresentar por quem ele foi feito e vc se apresenta. Apresentacao da sua empresa. 
+    qualquer conteudo que se difere dos demais temas do site. (fica no 'main')
 
   '<aside>' = É usado para definir um conteudo que nao esta ligado ao conteudo principal da pagina. É usado geralmente para barra lateral, call-out boxes, ou qualquer conteudo que complemente o principla.
   '<footer>' = É usado para informações finais,,, como informacoes de contato, autor e etc... 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 (IMPORTANTE) Caso quera tornar a sua pagina mais bonita e funcional utilize de javaScript e CSS e para conectar os arquivos nos utizamos da tag:
-  '<link>' = <link rel="" href="">  ...  'link': serve para ligar um arquivo externo ao nosso documento html. 'rel': serve para mostrar que tipo de relacao aquele arquivo tem com a gente. 'href': mostrar o caminho ate aquele arquivo
+  '<link>' = <link rel="" href="">  ...  'link': serve para ligar um arquivo externo ao nosso documento html. 'rel': serve para mostrar que tipo de relacao aquele arquivo tem com a gente. 'href': mostrar o 
+      caminho ate aquele arquivo
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Exemplo de tags sao:
 
-Atributos da tag = sao os atributos que ficam dentro da chave da tag de abertura, e servem para fornecer informacoes adicionais sobre o elementos, modificando o seu comportamento ou aparencia, podem ser usadas para auxiliar o uso da tag em 
-  outra linguagem como CSS e javaScript, sempre seguindo esse padrao de criacao :<nome-da-tag atributo="valor">conteúdo</nome-da-tag>.  Segue exemplo de uma tag com atributos da tag : <p id="paragrafo1" class="texto-destaque">Olá!</p> 
+Atributos da tag = sao os atributos que ficam dentro da chave da tag de abertura, e servem para fornecer informacoes adicionais sobre o elementos, modificando o seu comportamento ou aparencia, 
+  podem ser usadas para auxiliar o uso da tag em 
+    outra linguagem como CSS e javaScript, sempre seguindo esse padrao de criacao :<nome-da-tag atributo="valor">conteúdo</nome-da-tag>.  Segue exemplo de uma tag com atributos da tag : <p id="paragrafo1" 
+      class="texto-destaque">Olá!</p> 
   
 Oque é a tag - 
-  '<div>' = Possuie caracter generico (nao deixa claro qual sera o seu conteudo, agrupa elementos sem relacionamento necessario), usado para agrupar elementos e organizar a pagina, tornando a sua manipulacao com CSS e javaScript muito 
-    mais flexiveis
+  '<div>' = Possuie caracter generico (nao deixa claro qual sera o seu conteudo, agrupa elementos sem relacionamento necessario), usado para agrupar elementos e organizar a pagina, tornando a sua manipulacao
+    com CSS e javaScript muito mais flexiveis
 
-
-'value' (importante) = sempre que existe algo que o usuario ira marcar, como um radio, checkbox, select option, o 'value' entra em cena para mostrar qual valor sera passado para o formulario caso o usuario marque aquela opcao
+'value' (importante) = sempre que existe algo que o usuario ira marcar, como um radio, checkbox, select option, o 'value' entra em cena para mostrar qual valor sera passado para o formulario caso o usuario 
+  marque aquela opcao
 'required'(importante = torna o prenchimento daquele campo obrigatorio por parte do usuario.
 
 
-'<form>' = é usado para criar formularios( dai vem o nome 'form') em paginas web ou seja, areas onde o usuario pode inserir dados e enviar informacoes. Ela serve apenas como um conteiner ela define o espaco onde tera esses campos de entrada e
-  define como os dados serao enviados. Essa tag PODE possuir atributos da tag, como 'action' → para onde os dados serão enviados (URL), caso tenha o 'action' pode ter o , 'method' → como enviar os dados, ficando assim:
+'<form>' = é usado para criar formularios( dai vem o nome 'form') em paginas web ou seja, areas onde o usuario pode inserir dados e enviar informacoes. Ela serve apenas como um conteiner ela define o espaco 
+  onde tera esses campos de entrada e  define como os dados serao enviados. Essa tag PODE possuir atributos da tag, como 'action' → para onde os dados serão enviados (URL), caso tenha o 'action' pode ter o , 
+  'method' → como enviar os dados, ficando assim:
   <form action="/enviar" method="post">. Mas pode ter outros tambem como 'id'
 
   '<fieldset>'= usado para agrupar campos relacionados dentro de um formulário, ajuda na organizacao visual 
@@ -45,15 +50,16 @@ Oque é a tag -
 
   detro da tag 'form' é colocado oque nos queremos e como queremos receber os nossos dados com outras tags, algumas tags comuns utilizadas:
 
-  '<imput>' = é usada para criar campos onde o usuário pode digitar ou selecionar informações dentro de um formulário. Ela representa um campo de entrada de dados — pode ser texto, senha, email, botão, checkbox,ratio entre outros. Ela tambem nao
-    precisa de fechamento pois é uma tag vazia(nao aceita elementos dentro dela). Exemplos da sua implementacao / atributos uteis:
+  '<imput>' = é usada para criar campos onde o usuário pode digitar ou selecionar informações dentro de um formulário. Ela representa um campo de entrada de dados — pode ser texto, senha, 
+    email, botão, checkbox,ratio entre outros. Ela tambem nao precisa de fechamento pois é uma tag vazia(nao aceita elementos dentro dela). Exemplos da sua implementacao / atributos uteis:
   
     diferenca de ratio e checkbox = ratio marca apenas uma opcao enquanto checkbox pode marcar varias
-  
-    <input type="text" name="nome"> , onde 'type' é o tipo de dado desejado, onde o 'name' é o nome da variavel que se associara a um valor ( a grosso modo ele armazenara um valor). Esses dois atributos sao obrigatorios em todo input, pois sem o
-      'type' o sistema nao sabe que tipo de dados e nem o comportamento que o campo deve ter( sem ele o sistema assume que sera type="text") e sem o 'name' o sistema nao tem como capturar o dado passado pelo usuario
-  tipos de 'type' para inputs: 
-    
+
+    para escolher o maximo de letras inseridas coloque = maxlenght, minlenght, patters;
+      
+    <input type="text" name="nome"> , onde 'type' é o tipo de dado desejado, onde o 'name' é o nome da variavel que se associara a um valor ( a grosso modo ele armazenara um valor). Esses dois atributos sao 
+      obrigatorios em todo input, pois sem o 'type' o sistema nao sabe que tipo de dados e nem o comportamento que o campo deve ter( sem ele o sistema assume que sera type="text") e sem o 'name' o sistema nao 
+      tem como capturar o dado passado pelo  usuario tipos de 'type' para inputs: 
     texto e similares:
       'text'= campo comum de texto
       
@@ -80,14 +86,12 @@ Oque é a tag -
     
     'file'= seleciona um arquivo
     
-    'button'= cria um botao generico, o seu uso mais comum e para enviar formularios ou realizar acoes, oque determina oque o botao vai fazer é o seu 'type' por exemplo, type="submit" = envia formulário  (importante: esse é o tipo padrao se voce
-      nao passar um 'type' esse sera o padrao!)   ,type="button" = ação com JS(nao faz nada sozinho, type="reset" = limpa formulário. Boa pratica: Se estiver dentro de um <form> e você não quer enviar, set o 'type' do botao para 'button', para
-      nao correr risco, voce pode linkar o seu botao com o 'id' do formulario tambem.
-    
+    'button'= cria um botao generico, o seu uso mais comum e para enviar formularios ou realizar acoes, oque determina oque o botao vai fazer é o seu 'type' por exemplo, type="submit" = envia formulário  
+      (importante: esse é o tipo padrao se voce  nao passar um 'type' esse sera o padrao!)   ,type="button" = ação com JS(nao faz nada sozinho, type="reset" = limpa formulário. Boa pratica: Se estiver dentro 
+      de um <form> e você não quer enviar, set o 'type' do botao para 'button', para nao correr risco, voce pode linkar o seu botao com o 'id' do formulario tambem
      para terminar:
       'submit'= envia o formulario
       'reset'= limpa o formulario
-  
   
     ' value = " " ' = define valor inicial. / E em caso de ser de marcar define o valor da variavel 
     
@@ -96,11 +100,12 @@ Oque é a tag -
     'placeholder' = serve para colocar uma dica/mensagem no caixa de insercao, em inputs do tipo 'text', 
 
 
-ante de sairmos totalmente de input vamo ver tags que auxiliam o seu uso, e tags com funcoes parecidas:
+antes de sairmos totalmente de input vamo ver tags que auxiliam o seu uso, e tags com funcoes parecidas:
   '<label>' = Serve para dar um rótulo (nome visível) a um campo de formulário e, principalmente, ligar esse texto ao input correspondente.Para realizar o link coloque no atributo 'for' o 'id' do seu input. Exemplo: 
     <label for="nome">Nome:</label> <input type="text" id="nome">.
   
-  '<textarea>'= é usada para criar uma área de texto multilinha, onde o usuário pode digitar textos maiores (diferente do <input>, que normalmente é de uma linha só), que nem o input ele tem 'name', 'id'. Atributos comuns com o seu uso:
+  '<textarea>'= é usada para criar uma área de texto multilinha, onde o usuário pode digitar textos maiores (diferente do <input>, que normalmente é de uma linha só), que nem o input ele tem 'name', 'id'. 
+    Atributos comuns com o seu uso:
     Você pode controlar o tamanho com os atributos rows (linhas) e cols (colunas), tambem o maximo de carcteris com o atributo 'maxlength'
     
 Agora saindo de input
@@ -114,7 +119,8 @@ Agora saindo de input
   'figcaption' = adiciona uma legenda ao conteudo visual
 
   'img'= tag que serve para a insercao de imagens, tag vazia(sem fechamento). Exemplo da sua implementacao <img src="gato.jpg" alt="Um gato branco" width="300">
-    'src' = caminho da imagem ... 'alt'= descricao (se a imagem nao carregar aparece o texto / importante para acessibilidade, leitura de pagina) .Esses sao os necessarios o 'width' ou 'height' sao opcionais e servem para determinar o tamanho
+    'src' = caminho da imagem ... 'alt'= descricao (se a imagem nao carregar aparece o texto / importante para acessibilidade, leitura de pagina) .Esses sao os necessarios o 'width' ou 'height' sao opcionais e 
+      servem para determinar o tamanho
   
 
 '<table>'= para realizar a criacao de uma tabela, ela funciona a base de linhas e colunas
