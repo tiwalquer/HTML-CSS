@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        body{
+            background-color: black;
+            color: aquamarine;
+        }
+
+        #formulario input:focus, textarea:focus{
+            background-color: yellow ;
+        }
+        
+        #formulario{
+            display: flex   ;
+            align-items: center;
+            
+            justify-content: center;
+        }
+
+        .caixa{
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        .curso:hover{
+            color: lightpink;
+            cursor:pointer;
+        }
+
+        .sexo:hover{
+            color: lightpink;
+            cursor:pointer;
+        }
+
+        #respostas{
+            display: flex;
+            flex-direction: column;
+        }
+        #respostas:hover{   
+            
+            background-color: coral;
+
+        }
+
+        .elementos{
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+    
+        #inexistente:hover{
+            background-color: black;
+        }
+
+        
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+    </header>
+
+    <form id="formulario">
+        <div class="caixa">
+            <fieldset>
+
+                <div class="elementos">
+
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome">
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" id="senha">
+
+                    <label for="data">Sua data de nascimento:</label>
+                    <input type="date" name="data" id="data" max="2027-01-01">
+
+                    <div id="opcoesDeCurso">
+                        <caption>informe o seu curso</caption>
+                        <fieldset>
+                            
+                            <input type="radio" name="curso" id="cienciaDaComputacao" value="cienciaDaComputacao" class="curso" >
+                            <label for="cienciaDaComputacao" class="curso">ciencia da computacao</label>
+
+                            <input type="radio" name="curso" id="psicologia" value="psicologia" class="curso" >
+                            <label for="psicologia" class="curso">psicologia</label>
+                            
+                            <input type="radio" name="curso" id="taxista" value="taxista" class="curso" >
+                            <label for="taxista" class="curso">taxista</label>
+
+                            <input type="radio" name="curso" id="padre" value="padre" class="curso" >
+                            <label for="padre" class="curso">padre</label>
+
+                            <input type="radio" name="curso" id="sapateiro" value="sapateiro" class="curso" >
+                            <label for="sapateiro" class="curso">sapateiro</label>
+                        </fieldset>
+                    </div>
+
+                    <div id="opcoesDeSexo">
+                        <caption>qual o seu sexo</caption>
+                        <fieldset>
+                            <input type="radio" name="sexo" id="masculino" value="masculino" class="sexo">
+                            <label for="masculino" class="sexo">masculino</label>
+
+                            <input type="radio" name="sexo" id="feminino" value="feminino" class="sexo">
+                            <label for="feminino" class="sexo">feminino</label>
+                        </fieldset>
+                    </div>
+
+                    
+                    <label for="interesses">fale sobre os seus interesses</label>
+                    <textarea name="interesses" id="interesses"> </textarea> <!--funciona tipo um input. eu acho :)-->
+
+                    <label for="comentarios">comentarios:</label>
+                    <textarea name="comentarios" id="comentarios" placeholder="caso queira informar oque voce achou sobre esse formulario"></textarea>
+
+                    <label for="foto">foto de usuario</label>
+                    <input type="file"  id="foto" name="foto">
+
+                    <div id="respostas">
+                        <label for="enviar">Enviar respostas</label>
+                        <input type="submit" name="enviar" id="enviar">
+                    </div>
+
+                </div>
+            </fieldset>
+        </div>
+
+        <input type="button" name="naoTemBotao" id="inexistente" value="nao clique ">
+    </form>
+
+    
+</body>
+
+</html>
