@@ -37,12 +37,15 @@ Entender como os elementos da pagina sao divididos e de qual modo
 
 Como selecionar cores = Exemplo usando atributos como 'color:', 'background-color:', dentre outros. 1:Cores Nomeadas ': "nome de alguma cor" ' 2:Hexadecimal =Formato #RRGGBB ou #RGB (valores de 0 a F). 
   3:RGB e RGBA =  rgb(r, g, b) > valores de 0 a 255. rgba(r, g, b, a) > inclui alpha (transparência de 0 a 1).  4: HSL e HSLA = hsl(hue, saturation, lightness). hsla(...) com transparência.
-
+  
 Como mudar a fonte = 'font-family:' , peguei no google fonts
 
-Unidades de tamnho no CSS = Estruturacao: nome do atributo no css, informacoes ... 1:px; (pixels); detalhes pequenos, tamanhos !fixos! .. 2: rem; !Relativo! ao tamanho da fonte do elemento raiz; .. 3: em ; !Relativo! ao elemento pai .. 
-  4: %; !Relativo! ao tamanho do elemento pai(sendo 100% o tamanho do pai) .. 5: vw (viewport width); !Relativo! à largura da tela; otimo para multiplos dispositivos .. 6: vh (viewport height); !Relativo! à altura da tela ..
-  7: vmin e vmax = vmin: menor dimensão da tela; vmax: maior dimensão da tela
+Propriedades de border(borda) = 
+  border-radius = mexe na conto da borda podendo deixar ela arredondada 
+
+Unidades de tamnho no CSS = Estruturacao: nome do atributo no css, informacoes ... 1:px; (pixels); detalhes pequenos, tamanhos !fixos! .. 2: rem; !Relativo! ao tamanho da fonte do elemento raiz; .. 3: em ; 
+  !Relativo! ao elemento pai .. 4: %; !Relativo! ao tamanho do elemento pai(sendo 100% o tamanho do pai) .. 5: vw (viewport width); !Relativo! à largura da tela; otimo para multiplos dispositivos .. 6: vh 
+  (viewport height); !Relativo! à altura da tela ..  7: vmin e vmax = vmin: menor dimensão da tela; vmax: maior dimensão da tela.
 
 posicionamento:
   Alinhamento (horizontal / de conteudo) = '-align' para alinhamento horizontal do texto( nao mexe na posicao do elemento(div,article,  ...) apenas o conteudo). Exemplo de posiveis usos: 'text-align'.
