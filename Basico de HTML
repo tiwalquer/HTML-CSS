@@ -148,8 +148,12 @@ Agora saindo de input
 
 '<a>'= serve para criar links,com o link ela pode levar o usuário para: outra página, outro site, uma parte da mesma página, um arquivo, email, etc. Exemplo: 
   <a href="https://www.google.com">Ir para o Google</a> , o 'href' é o destino do link
-    
-    para abrir o link em outra pagina coloque o atributo 'target="_blank"'
+
+    Para escolher aonde o seu link abrira, se usa o atributo 'target' que pode ter os seguindes valores 
+      para abrir o link em outra pagina coloque o atributo 'target="_blank"'
+      '_self' (Padrão): Abre o documento na mesma janela/aba em que foi clicado
+      '_parent' : Abre o documento no frame principal
+      '_top':  Abre o documento em tela cheia na janela.
 
 '<audio>' = reproduz um audio
   
