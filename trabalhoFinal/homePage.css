@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+
+}   
+
+header{
+    top:0;
+}
+
+body{
+    min-height: 100vw;
+}
+
+#homePage{
+
+    display: grid;
+
+    grid-template-columns: 80vw;
+
+    background-color: #D0D0D0;
+    color: black;
+    
+
+    font-size: 1.2rem;
+}
+body.dark-mode {
+    background-color: #121212;
+    color: rgb(40, 40, 40);
+}
+#modoCor{
+
+    display: flex;
+    justify-content:end;
+    
+}
+#modoCor:hover{
+    background-color:yellow ;
+    cursor:pointer ;
+
+    
+}
+
+#paragrafoDescritivo{
+    display: flex;
+}
+#paragrafoDescritivo p{
+    display: grid;
+
+    grid-template-columns: 25vw;
+}
+
+.titulo{
+    font-style:normal;
+}
+
+.imagem img{
+    width: 30vh;
+    height: 15vw;
+   
+}
+
+.imagem figcaption{
+
+    font-size: 0.8rem;
+    font-style:italic;
+}
+
+#menu{
+
+    position:sticky;
+    width: 100%;
+
+    border-bottom: solid ;
+    border-bottom-color: darkgray ;
+    border-bottom-width: 0.6vh  ;
+
+    top: 0px;
+
+}
+
+#menuItem{
+    display:flex;
+
+    gap: 7%;
+    
+    background-color: black;
+    color: white;
+    list-style: none;
+
+}
+
+
+
+.naPagina:hover{
+    background-color: aliceblue;
+}
+#naPage{
+    color: lightblue;
+    border-bottom: 2px solid blue;
+    font-weight: bold;
+}
+
+
