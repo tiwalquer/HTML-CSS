@@ -1,0 +1,6 @@
+Nesse repositorio voce encontrara algumas unidades de medidas tanto para HTML e CSS
+
+  vh e vw são unidades relativas ao tamanho da janela do navegador (viewport), eles funcionam com base no tamanho da tela, por Exemplo: Se a tela tiver 1920px de largura: 100vw = 1920px ; 50vw = 960px; e assim por diante
+    elas funcionam a base de porcentagem
+      :vh = viewport height (altura da tela)
+      :vw = viewport width (largura da tela)
