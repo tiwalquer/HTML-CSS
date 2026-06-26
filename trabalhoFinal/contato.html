@@ -7,6 +7,10 @@
 
     <link rel="stylesheet" href="contato.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--mudei-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -14,15 +18,17 @@
     <div id="menu" >
         <header> <!-- aqui ficara o menu o qual dara acesso a outros abas da minha pagina-->
             <section>
-                <nav>
-                    <div >
+                <nav id="menuItemGrande">
+                    
                         <ul id="menuItem">
                             <li class="naPagina"> <a href="homePage.html">HomePage</a> </li>
                             <li class="naPagina"> <a href="trajeto.html">trajeto</a>  </li>
                             <li class="naPagina" id="naPage"> <a href="contato.html">contato</a> </li>
-                            <button id="modoCor">alterar modo de cor</button>
+                            <li>
+                                <button id="modoCor">alterar modo de cor</button>
+                            </li>
                         </ul>
-                    </div>
+                    
                 </nav>
             </section>
         </header>
@@ -32,7 +38,7 @@
         <section>
             <div id="conteudoPrincipal">
                 <div>
-                    <h1>Redes sociais</h1>
+                    <h1 class="titulo">Redes sociais</h1>
                     <p>
                         Nessa ultima parte estara falando aonde pode-se achar os meus trabalhos e informacoes de contato
                     </p>
@@ -40,7 +46,7 @@
 
                 <article>
                     <div>
-                        <h2>'Trabalhos'</h2>
+                        <h2 class="titulo">'Trabalhos'</h2>
                         <p>
                             Eu fiz trabalhos em java, como arvores, dentre outros. Tambem a algumas anotacoes sobre banco de dados, HTML, CSS, java, dentre outros 
                         </p>
@@ -48,33 +54,50 @@
 
                 </article>  
 
-                <footer>
-                    <article>
-                        <div id="contato">
-                            <h2>contato:</h2>
+                <article>
+                    <fieldset>
+                        <legend class="titulo">informe oque voce achou do meu site</legend>
+                        <form>
 
-                            <div id="espacoEntreOsContatos">
-                                <div id="github" class="itensDoContato">
-                                    <i class="fa-brands fa-github"></i>
-                                    <a href="https://github.com/tiwalquer" target="_blank" id="githubLink" onclick="return alertaDeCerteza()"> <abbr title="tiwalquer">github</abbr> </a>
-                                </div>
-                                <div class="itensDoContato">
-                                    <i class="fa-solid fa-envelope"></i>
-                                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tiagopas@edu.unifil.br" target="_blank" onclick="return alertaDeCertezaEmail()"> <abbr title="tiagopas@edu.unifil.br">email</abbr></a> 
-                                    <!-- destrinchando essa URL por partes; 1: endereço principal do Gmail; (Depois vem o ?, que indica o início dos parâmetros da URL) 
-                                    2: view = define qual tela do Gmail será aberta .. cm = "compose message" (compor mensagem); 3:fs = "full screen". 1 = abrir a composição em uma janela maior.   
-                                    ; 4: e o 'to' para quem é-->
-                                </div>
+                            <textarea name="comentarios" id="comentarios" placeholder="comente a sua experiencia"></textarea>
 
+                            <input type="submit">
+                        </form>
+                    </fieldset>
+                </article>
+
+                <article>
+                    <div id="contato">
+                        <h2 class="titulo">contato:</h2>
+
+                        <div id="espacoEntreOsContatos">
+                            <div id="github" class="itensDoContato">
+                                <i class="fa-brands fa-github"></i>
+                                <a href="https://github.com/tiwalquer" target="_blank" id="githubLink" onclick="return alertaDeCerteza()"> <abbr title="tiwalquer">github</abbr> </a>
                             </div>
-
+                            <div class="itensDoContato">
+                                <i class="fa-solid fa-envelope"></i>
+                                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tiagopas@edu.unifil.br" target="_blank" onclick="return alertaDeCertezaEmail()"> <abbr title="tiagopas@edu.unifil.br">email</abbr></a> 
+                                <!-- destrinchando essa URL por partes; 1: endereço principal do Gmail; (Depois vem o ?, que indica o início dos parâmetros da URL) 
+                                2: view = define qual tela do Gmail será aberta .. cm = "compose message" (compor mensagem); 3:fs = "full screen". 1 = abrir a composição em uma janela maior.   
+                                ; 4: e o 'to' para quem é-->
+                            </div>
                         </div>
-                    </article>
-                </footer>
 
+                    </div>
+                 </article>
+                
             </div>
+
         </section>
 
+        
+
+        <footer id="rodaPe">
+            <p>
+                Criado usando HTML, CSS, javaScript. em 2026
+            </p>
+        </footer> 
 
     </main>
 

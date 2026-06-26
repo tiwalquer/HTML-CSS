@@ -7,49 +7,54 @@
 
     <link rel="stylesheet" href="homePage.css">
 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--mudei-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"> 
+
 </head>
 
 <body>
-    <div id="menu" >
-        <header> <!-- aqui ficara o menu o qual dara acesso a outros abas da minha pagina-->
+    
+    <header id="menu"> <!-- aqui ficara o menu o qual dara acesso a outros abas da minha pagina-->
             
-                <nav>
-                    <div >
-                        <ul id="menuItem">
-                            <li class="naPagina" id="naPage"> <a href="homePage.html">HomePage</a> </li>
-                            <li class="naPagina"> <a href="trajeto.html">trajeto</a>  </li>
-                            <li class="naPagina"> <a href="contato.html">contato</a> </li>
-                            <button id="modoCor">alterar modo de cor</button>
-                        </ul>
+            <nav id="menuItemGrande">
+                
+                <ul id="menuItem">
+                    <li class="naPagina" id="naPage"> <a href="homePage.html">HomePage</a> </li>
+                    <li class="naPagina"> <a href="trajeto.html">trajeto</a>  </li>
+                    <li class="naPagina"> <a href="contato.html">contato</a> </li>
+                    <li>
+                        <button id="modoCor">alterar modo de cor</button>
+                    </li>
+                </ul>
                         
-                    </div>
-
-                    
-                </nav>
             
-        </header>
-    </div>
+            </nav>
+            
+    </header>
 
-    <main>
+    <main id="main">
         
         <section>
             <div  id="homePage">
 
                 <article>
                     <div id="sobreMim">
-                        <h1 class="titulo">sobre mim</h1>
+                        <h1 class="titulo">Tiago Alves Pascutti</h1>
                         <p id="paragrafoDaImagem">
-                            O meu nome é Tiago Alves Pascutti, nascido em 22 de março de 2007. Com ensino medio completo,
-                            cursando ciencia da computacao na universidade UNIFIL, atualmente me encontro no 2 ano do meu curso.
+                            Olá eu sou o Tiago , nascido em 22 de março de 2007. Com ensino médio completo, atualmente 
+                            cursando Ciência da Computação na universidade UNIFIL, me encontro no 2 ano do meu curso, e nesse tempo vim a aprender sobre
+                            linguagens de programação, robotica, matemática, outras linguagem e muito mais, busco me desenvolver nessa área da computação cada dia mais.
                         </p>
                         <div id="paragrafoDescritivo">
                             <figure class="imagem">
-                                <img src="Eu.png" alt="uma foto minha com um cachorro">
+                                <img src="Eu.png" alt="uma foto minha com um cachorro" id="imagem">
                                 <figcaption>Eu com a minha fiel companheira</figcaption>
                             </figure>
                             <p >
-                                Essa parte contara sobre mim, o site é dividido em 3 partes, essa que nos estamos a qual fala sobre mim de uma maneira mais pessoal,
-                                a area trajeto que mostrara um pouco as minhas competenciencia e quem as me concedeu, e por o contato a qual é reservada para me encontrar em outras
+                                Essa parte contará sobre mim, o site é dividido em 3 partes, essa que nos estamos a qual fala sobre mim de uma maneira mais pessoal,
+                                a área trajeto que mostrara um pouco as minhas competências e quem as me concedeu, e por o contato a qual é reservada para me encontrar em outras
                                 redes, sem ser esse site &#128513; .  
                             </p>
                         </div>
@@ -63,18 +68,29 @@
                         <p>
                             atualmente estou estudando bastante sobre <abbr title="hyper text makeup language">HTML</abbr>,
                             <abbr title="cascate style sheet">CSS</abbr> e javaScript, esta sendo um passa tempo bem interessante
-                            , tambem venho estudando ingles, gosto de jogos e musica . 
+                            , tambem venho estudando inglês, gosto de jogos e musica . 
                         </p>
+                        
                     </div>
                 </article>
-            
+                
+                <article> 
+                    <div id="skills">
+                        <h2 class="titulo">tecnologias:</h2>
+                        <div>
+                            <p id="skill">
+                                HTML CSS JavaScrip GitHub Java
+                            </p>
+                        </div>
+                    </div>
+                </article>
 
                 <article>
                     <div id="trabalhos">
                         <h2 class="titulo">meus trabalhos</h2>
                         <p>
                             Eu deixo alguns trabalhos meus no github, sobre oque eu estudei ate agora, sobre HTML, CSS dentre outros assuntos <br>
-                            saiba mais na aba contados
+                            saiba mais na aba contatos
                             
                         </p>
                     </div>
@@ -83,7 +99,11 @@
             </div>
         </section>
 
-
+        <footer id="rodaPe">
+            <p>
+                Criado usando HTML, CSS, javaScript. em 2026
+            </p>
+        </footer>   
 
     </main>
 

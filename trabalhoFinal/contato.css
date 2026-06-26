@@ -6,30 +6,54 @@
 
 } 
 
+body{
+    background-color: #ececec; /*mudei */
+    font-family: "Poppins", sans-serif;
+}
+
 #menu{
 
     position:sticky;
     width: 100%;
+    min-height: 3rem;
 
-    border-bottom: solid;
-    border-bottom-color: darkgray;
+    border-bottom: solid ;
+    border-bottom-color: darkgray ;
     border-bottom-width: 0.6vh;
 
     top: 0px;
 
+    background-color: black;
+    align-items: center;
 }
+
 #menuItem{
     display:flex;
 
     gap: 7%;
+    padding: 0.5rem;
+    justify-content: center;
 
     background-color: black;
     color: white;
     list-style: none;
-}
-.naPagina:hover{
-    background-color: aliceblue;
+    
+    height: 100%;
 
+    align-items: center;
+    font-size: 1.4rem;
+}
+#menuItemGrande{
+    background-color: black;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+.naPagina:hover{
+    background-color: #8bc1ff;
+    color: #121212;
 }
 #naPage{
     color: lightblue;
@@ -49,21 +73,57 @@
 
 }
 
+.titulo{
+    font-style:normal;
+    color:#2b66d9;
+}
+
+p{
+    text-align: justify ;
+    line-height:1.4; 
+    margin-top:0.1rem;
+}
+
+article{ /* mudei */
+    background: white;
+
+    border-radius: 12px;
+
+    padding: 1.2rem;
+
+}
+
 #conteudoPrincipal{
 
     display: grid;
 
-    grid-template-columns: 80vw;
+    max-width: 1000px;
+
+    gap: 1.5rem;
+
+    grid-template-columns: 50vw;
 
     background-color: #D0D0D0;
+    color: black;
+    border-radius: 15px;
+
+    margin: 2rem auto;
+    padding: 2rem;
 
     font-size: 1.2rem;
 }
 
+#divisaoDaImagem{
+    display: flex;
+    
+    margin: 1rem;
+    margin-left: 0.1rem;
+}
 .imagem img{
     width: 30vh;
     height: 12.5vw;
-   
+    
+    
 }
 .imagem figcaption{
 
@@ -90,8 +150,45 @@
     transform: scale(1.1);
 }
 
-body.dark-mode {
-    background-color: #121212;
-    color: rgb(40, 40, 40); 
+
+
+#naPage a{
+    color: grey;
+    border-bottom: 2px solid blue;
+    font-weight: bold;
+
 }
 
+#rodaPe{
+    display: flex;
+
+    align-items:end;
+    justify-content: center;
+
+    min-height: 2rem;
+    max-height: 4rem;
+
+    font-size: 1.5vw;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: rgb(255, 255, 255); 
+}
+body.dark-mode #conteudoPrincipal{
+
+    background:#1e1e1e;
+
+    color:white;
+}
+body.dark-mode article{
+
+    background:#2b2b2b;
+}
+body.dark-mode #menu{
+
+    background:#000;
+}
+body.dark-mode article{
+    background:#2b2b2b;
+}

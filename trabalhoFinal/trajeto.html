@@ -6,6 +6,10 @@
     <title>Trajeto</title>
 
     <link rel="stylesheet" href="trajeto.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--mudei-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -13,16 +17,17 @@
     <div id="menu" >
         <header> <!-- aqui ficara o menu o qual dara acesso a outros abas da minha pagina-->
             
-                <nav>
-                    <div >
-                        <ul id="menuItem">
-                            <li class="naPagina" > <a href="homePage.html">HomePage</a> </li>
-                            <li class="naPagina" id="naPage"> <a href="trajeto.html">trajeto</a>  </li>
-                            <li class="naPagina"> <a href="contato.html">contato</a> </li>
-                            <button id="modoCor">alterar modo de cor</button>
-                        </ul>
-                    </div>
-                </nav>
+            <nav id="menuItemGrande">
+                    
+                <ul id="menuItem">
+                    <li class="naPagina" > <a href="homePage.html">HomePage</a> </li>
+                    <li class="naPagina" id="naPage"> <a href="trajeto.html">trajeto</a>  </li>
+                    <li class="naPagina"> <a href="contato.html">contato</a> </li>
+                    <li>
+                        <button id="modoCor">alterar modo de cor</button>
+                    </li>
+                </ul>
+            </nav>
             
         </header>
     </div>
@@ -31,19 +36,29 @@
 
         <section>  
             <div id="conteudoPrincipal">
-                <article>
-                    <h1>Oque me levou a gostar do que eu gosto</h1>
+                <div>
+                    <h1 class="titulo">Oque me levou a gostar do que eu gosto</h1>
                     <p>
                         Nessa parte eu irei contar sobre as coisas que eu gosto e me aprofundar nelas 
                     </p>
+                </div>
+
+                <article> <!--mudar-->
+                    <h2 class="titulo">Minhas competencias</h2>
+                    <p>
+                        Em vis tecnico eu possuo conhecimento em java, SQL, matematica, HTML. E em vies social as minhas habilidades se destacam ainda
+                        mais, tendo uma otima comunicação e vontade.
+                    </p>
                 </article>
 
-                <article>
-                    <h2>programacao</h2>
-                    <figure class="imagem">
-                        <img src="https://th.bing.com/th/id/OIP.siuMTDyLY3ITt-jTGcWSQwHaE7?w=272&h=181&c=7&r=0&o=7&pid=1.7&rm=3" alt="foto 2D de algum mexendo em um computador">
-                        <figcaption>alguem mexendo em um computador</figcaption>
-                    </figure>
+                <article class="divisaoDaImagem" >
+                    <h2 class="titulo">programacao</h2>
+                    <div>
+                        <figure class="imagem">
+                            <img src="https://th.bing.com/th/id/OIP.siuMTDyLY3ITt-jTGcWSQwHaE7?w=272&h=181&c=7&r=0&o=7&pid=1.7&rm=3" alt="foto 2D de algum mexendo em um computador">
+                            <figcaption>alguem mexendo em um computador</figcaption>
+                        </figure>
+                    </div>
                     <p>
                         eu vim a desenvolver um certo gosto pela tecnologia aos meus 15, que foi quando eu me fiz a seguinte pergunta como isso "funciona",
                         seja quando eu me divertia a jogar um jogo eletronico ou quando acessava um site, tudo aqui me parecia muito magico, entao quando me surgiu
@@ -51,8 +66,8 @@
                     </p>
                 </article>
 
-                <article>
-                    <h2>Comida e culinaria</h2>
+                <article class="divisaoDaImagem">
+                    <h2 class="titulo">Comida e culinaria</h2>
                     <figure class="imagem">
                         <img src="https://th.bing.com/th/id/OIP.15bY0WY4VWMONlusP6c1FQHaEK?w=322&h=181&c=7&r=0&o=7&pid=1.7&rm=3" alt="um jovem cozinhando">
                         <figcaption>Um jovem cozinhando</figcaption>
@@ -68,6 +83,12 @@
 
         </section>
 
+
+        <footer id="rodaPe">
+            <p>
+                Criado usando HTML, CSS, javaScript. em 2026
+            </p>
+        </footer> 
     </main>
     
     <script src="modoDeCor.js" defer></script>
