@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+
+} 
+
+body{
+    background-color: #8b8b8b;
+}
+
+
+#menu{
+
+    position:sticky;
+    width: 100%;
+    min-height: 3rem;
+
+    border-bottom: solid ;
+    border-bottom-color: darkgray ;
+    border-bottom-width: 0.6vh;
+
+    top: 0px;
+
+    background-color: black;
+    align-items: center;
+}
+
+#menuItem{
+    display:flex;
+
+    gap: 7%;
+    
+    background-color: black;
+    color: white;
+    list-style: none;
+    
+    height: 100%;
+
+    align-items: center;
+    font-size: 1.4rem;
+}
+#menuItemGrande{
+    background-color: black;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+.naPagina:hover{
+    background-color: aliceblue;
+
+}
+#naPage{
+    color: lightblue;
+    border-bottom: 2px solid blue;
+    font-weight: bold;
+}
+body.dark-mode {
+    background-color: #121212;
+    color: rgb(40, 40, 40);
+}
+#modoCor{
+
+    display: flex;
+    justify-content:end;
+    
+   
+}
+#modoCor:hover{
+    background-color:yellow ;
+    cursor:pointer ;
+
+    
+}
+
+p{
+    text-align: justify ;
+}
+
+#conteudoPrincipal{
+
+    display: grid;
+
+    grid-template-columns: 80vw;
+
+    background-color: #D0D0D0;
+
+    font-size: 1.2rem;
+}
+
+.imagem img{
+    width: 30vh;
+    height: 12.5vw;
+   
+}
+.imagem figcaption{
+
+    font-size: 0.8rem;
+    font-style:italic;
+}
+
+#naPage a{
+    color: grey;
+    border-bottom: 2px solid blue;
+    font-weight: bold;
+
+}
+
+#rodaPe{
+    display: flex;
+
+    align-items:end;
+    justify-content: center;
+}
